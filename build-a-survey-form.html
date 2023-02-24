@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"></meta>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>freeCodeCamp Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="survey" >
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p class="thanks" id="description">Thank you for taking the time to help us improve the platform</p>
+    <form id="survey-form">
+      <label id="name-label">Name <input id="name" type="text" required placeholder="Enter your name"></input></label>
+      <label id="email-label">Email <input id="email" type="email" required placeholder="Enter your Email"></input></label>
+      <label id="number-label">Age (optional) <input id="number" type="number" min="12" max="100" placeholder="Age"></input></label>
+      <label id="role-label">Which option best describes your current role?
+      <select name="role" id="dropdown">
+        <option value="select-current-role">Select current role</option>
+        <option value="student">Student</option>
+        <option value="full-time-job">Full Time Job</option>
+        <option value="full-time-learner">Full Time Learner</option>
+        <option value="other">Other</option>
+        </select></label>
+        <label id="recommendation">Would you recommend freeCodeCamp to a friend?</label>
+        <label id="recommendation options"><input id="definitely" type="radio" class="inline" value="definitely" name="recommendation options" >Definitely</input></label> 
+        <label id="recommedation options"><input id="maybe" type="radio" class="inline" value="maybe" name="recommendation options">Maybe</input></label>
+        <label id="recommendation options"><input id="not sure" type="radio" class="inline" value="not sure" name="recommendation options">Not sure</input></label>
+        <label id="the content">What contents are you most interested in studying?</label> 
+          <label id="front end" ><input id="front end" type="checkbox" class= "inline" value="front end" >Front-End</input></label>
+        <label id="back end"><input id="back end" type="checkbox" class="inline" value=" back end">Back-End</input></label>
+        <label id="other"><input id="other" type="checkbox" class="inline" value="other">Others</input></label>
+        <label id="comments">Any comments or suggestions?<textarea id="comments" name="comments" rows="5" cols="30" placeholder="Enter your comment here" ></textarea>
+        <label><input id="submit" type="submit" value="Submit"></input></label>
+        </form>
+    </div>
+  </body>
+</hmtl>
